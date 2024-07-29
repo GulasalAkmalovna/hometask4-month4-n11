@@ -47,11 +47,17 @@
 
 // //TASK - 83
 // function swapFirstLast(s) {
-
+//    return s.split(" ").map((item) => {
+//          if (item.length > 1) {
+//             return item[item.length - 1] + item.slice(1, -1) + item[0];
+//          }
+//          return item;
+//       }).join(" ");
 // }
 
 // // Test cases
-// console.log(swapFirstLast("hello world")); // Output: "oellh dlorw"
+// console.log(swapFirstLast("hello world"));
+// console.log(swapFirstLast("a quick brown fox"));
 
 //TASK - 84
 // function indexOfMax(arr) {
@@ -85,12 +91,26 @@
 // Output: { even: [2, 4, 6, 8], odd: [1, 3, 5, 7, 9] }
 
 //TASK - 87
-//   function gcd(a, b) {
+// function findPrimeNumbers(nums) {
+//    let result = [];
+//    for (let num of nums) {
+//       let isPrime = true;
+//       for (let i = 2; i < num; i++) {
+//          if (num % 2 === 0) {
+//             isPrime = false;
+//             break;
+//          }
+//       }
+//       if (isPrime) {
+//          result.push(num);
+//       }
+//    }
 
-//  }
+//    return result;
+// }
 
-//  // Test case
-//  console.log(findCoprimePairs([2, 3, 4, 5, 6, 7])); // Output: [2, 3, 5, 7]
+// Test case
+// console.log(findPrimeNumbers([2, 3, 4, 5, 6, 7])); // Output: [2, 3, 5, 7]
 
 // //TASK - 88
 // function rotateArray(arr, k) {
@@ -129,7 +149,7 @@
 
 //TASK - 91
 // function allElementsEqual(arr) {
-
+//    return arr.every((num) => num === arr[0]);
 // }
 
 // // Test case
